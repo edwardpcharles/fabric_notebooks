@@ -7,12 +7,12 @@
 #### Projects/Files in order of initial upload:
 - table_save.ipynb: A notebook that refreshes a single table in a Power BI semantic model and then writes the results to a connected lakehouse. (Needs to be redone; there are much more efficient ways to do the same thing.)
 
--fabric_python_demo.ipynb: A notebook where I use a few Semantic link functions: list workspaces, list datasets, list measures, and evaluate_measure
+- fabric_python_demo.ipynb: A notebook where I use a few Semantic link functions: list workspaces, list datasets, list measures, and evaluate_measure
 
--Measure Dependency Graph Builder.ipynb: A really good idea - better executed by the team behind Semantic Link Labs. Takes a measure, and then produces a image of all the upstream and downstream measures, saves the image in the files of the attached lakehouse. 
+- Measure Dependency Graph Builder.ipynb: A really good idea - better executed by the team behind Semantic Link Labs. Takes a measure, and then produces a image of all the upstream and downstream measures, saves the image in the files of the attached lakehouse. 
 
--budget folder: A example of loading excel data into a Type 2 Table. Contains two notebooks: 1. For Creating the inital type 2 table, 2. For merging into the Type 2 Table
+- budget folder: A example of loading excel data into a Type 2 Table. Contains two notebooks: 1. For Creating the inital type 2 table, 2. For merging into the Type 2 Table
 
--Get All User Access.ipynb: A notebook that uses semantic link labs and semantic link to pull all workspace users, report users, app users, and then dataset RLS roles and assigned users. Some the code submits requests to the Power BI admin rest API.
+- Get All User Access.ipynb: A notebook that uses semantic link labs and semantic link to pull all workspace users, report users, app users, and then dataset RLS roles and assigned users. Some the code submits requests to the Power BI admin rest API.
 
---Get Dataset Refresh Enabled From Report.ipynb: A notebook with a python function that takes a report name, optional report workspace and then responds with T/F if the dataset refresh it hooks into is enabled. 
+- Get Dataset Refresh Enabled From Report.ipynb: A notebook with a python function that takes a report name, optional report workspace and then responds with T/F if the dataset refresh it hooks into is enabled. 
