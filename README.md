@@ -15,4 +15,6 @@
 
 - Get All User Access.ipynb: A notebook that uses semantic link labs and semantic link to pull all workspace users, report users, app users, and then dataset RLS roles and assigned users. Some the code submits requests to the Power BI admin rest API.
 
-- Get Dataset Refresh Enabled From Report.ipynb: A notebook with a python function that takes a report name, optional report workspace and then responds with T/F if the dataset refresh it hooks into is enabled. 
+- Get Dataset Refresh Enabled From Report.ipynb: A notebook with a python function that takes a report name, optional report workspace and then responds with T/F if the dataset refresh it hooks into is enabled.
+
+- Get Dataset Next Refresh From Report.ipynb: A notebook with a Python function that takes a report name and an optional report workspace, then responds with the report's dataset's next scheduled refresh datetime.
