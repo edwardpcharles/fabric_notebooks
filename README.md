@@ -19,4 +19,6 @@
 
 - Get Dataset Next Refresh From Report.ipynb: A notebook with a Python function that takes a report name and an optional report workspace, then responds with the report's dataset's next scheduled refresh datetime.
   
+- Get Report Dataset Details.ipynb: A notebook with two python functions one of which is modified from "Get Dataset Next Refresh From Report.ipynb" you can feed the second function a workspace name, and it will go get the refresh status of all the reports in that workspace!
+  
 - Re-enable Report dataset.ipynb: A notebook with a function that takes a report name and report workspace and re-enables the dataset if it is disabled.  
