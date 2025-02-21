@@ -21,4 +21,6 @@
   
 - Get Report Dataset Details.ipynb: A notebook with two python functions one of which is modified from "Get Dataset Next Refresh From Report.ipynb" you can feed the second function a workspace name, and it will go get the refresh status of all the reports in that workspace!
   
-- Re-enable Report dataset.ipynb: A notebook with a function that takes a report name and report workspace and re-enables the dataset if it is disabled.  
+- Re-enable Report dataset.ipynb: A notebook with a function that takes a report name and report workspace and re-enables the dataset if it is disabled.
+
+- Get Report Usage.ipynb: A fabric notebook to grab report usage out of the power bi activity hub
