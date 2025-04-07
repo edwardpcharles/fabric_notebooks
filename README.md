@@ -25,4 +25,6 @@
 
 - Get Report Usage.ipynb: A fabric notebook to grab report usage out of the power bi
   
-- Final Get Report Dataset Details.ipynb: Same notebook as Get Report Dataset Details only with try + catch statements and saves to the data lake. 
+- Final Get Report Dataset Details.ipynb: Same notebook as Get Report Dataset Details only with try + catch statements and saves to the data lake.
+
+- Thin Report Splitter.ipynb: A Notbook that can take a report/semantic model combo in a workspace and split it into a thin report connected to a semantic model in another workspace
