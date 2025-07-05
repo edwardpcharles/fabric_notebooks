@@ -30,3 +30,5 @@
 - Thin Report Splitter.ipynb: A Notbook that can take a report/semantic model combo in a workspace and split it into a thin report connected to a semantic model in another workspace
   
 - Duplicate Semantic Model with model.bim.ipynb: A Notebook that extracts a model.bim file one semantic model and deploys it into a new one
+
+- Github Commit.ipynb: A notebook that checks a workspace's Git commit status and commits the workspace if it hasn't been committed.
