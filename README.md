@@ -32,3 +32,5 @@
 - Duplicate Semantic Model with model.bim.ipynb: A Notebook that extracts a model.bim file one semantic model and deploys it into a new one
 
 - Github Commit.ipynb: A notebook that checks a workspace's Git commit status and commits the workspace if it hasn't been committed.
+
+- Dax Formatter: A notbook that loops through all the measures in a semantic model and formatts them using DAX Formatter.com
