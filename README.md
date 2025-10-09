@@ -34,3 +34,5 @@
 - Github Commit.ipynb: A notebook that checks a workspace's Git commit status and commits the workspace if it hasn't been committed.
 
 - Dax Formatter: A notbook that loops through all the measures in a semantic model and formatts them using DAX Formatter.com
+  
+- Grab All Metadata: loops through all the semantic models in a workspace and gets the tables, columns, and measure definition
