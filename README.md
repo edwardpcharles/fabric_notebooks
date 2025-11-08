@@ -36,3 +36,6 @@
 - Dax Formatter: A notbook that loops through all the measures in a semantic model and formatts them using DAX Formatter.com
   
 - Grab All Metadata: loops through all the semantic models in a workspace and gets the tables, columns, and measure definition
+  
+- Capacity Get refreshables Demo: Demo using the Capacity Get Refreshables API
+  
