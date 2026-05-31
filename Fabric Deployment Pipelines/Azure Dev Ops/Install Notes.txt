@@ -1,0 +1,7 @@
+1. Go to Settings, Service Connections, New Service Connection 
+2. Select "Azure Resource Manager" -- App Registration, Workload identity Federation
+3. Delegate Notebook Permissions to App Registration
+4. Add App registration to AD group
+5. Grant AD group access to Fabric APIs, add AD group as contributor
+6. Copy files to root of git repo
+7. Grab Workspace IDs and Notebook ID update YAML

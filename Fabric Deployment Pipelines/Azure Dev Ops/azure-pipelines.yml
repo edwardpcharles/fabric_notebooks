@@ -1,0 +1,42 @@
+trigger: none
+pr: none
+
+pool:
+  vmImage: windows-latest
+
+variables:
+  pythonVersion: "3.12"
+  azureServiceConnection: "YOUR_AZURE_SERVICE_CONNECTION"
+  fabricWorkspaceId: "00000000-0000-0000-0000-000000000000"
+  fabricNotebookItemId: "00000000-0000-0000-0000-000000000000"
+  fabricJobType: "Execute"
+  # JSON array string passed to Fabric Job Scheduler parameters.
+  # Notebook should validate this and fail if output does not match.
+  fabricParametersJson: '[{"name":"ExpectedOutput","value":"Hello World","type":"Text"}]'
+
+stages:
+- stage: RunFabricNotebook
+  jobs:
+  - job: RunNotebook
+    steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: "$(pythonVersion)"
+
+    - script: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+      displayName: Install dependencies
+
+    - task: AzureCLI@2
+      displayName: Run Fabric Notebook
+      inputs:
+        azureSubscription: "$(azureServiceConnection)"
+        scriptType: pscore
+        scriptLocation: inlineScript
+        inlineScript: |
+          python run_fabric_notebook.py `
+            --workspace-id "$(fabricWorkspaceId)" `
+            --item-id "$(fabricNotebookItemId)" `
+            --job-type "$(fabricJobType)" `
+            --parameters-json '$(fabricParametersJson)'
